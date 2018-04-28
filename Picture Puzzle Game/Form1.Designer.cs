@@ -163,7 +163,7 @@
             this.lblMovesMade.AutoSize = true;
             this.lblMovesMade.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMovesMade.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblMovesMade.Location = new System.Drawing.Point(116, 538);
+            this.lblMovesMade.Location = new System.Drawing.Point(12, 551);
             this.lblMovesMade.Name = "lblMovesMade";
             this.lblMovesMade.Size = new System.Drawing.Size(204, 39);
             this.lblMovesMade.TabIndex = 1;
@@ -175,7 +175,7 @@
             this.gbOriginal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gbOriginal.Cursor = System.Windows.Forms.Cursors.Cross;
             this.gbOriginal.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.gbOriginal.Location = new System.Drawing.Point(580, 31);
+            this.gbOriginal.Location = new System.Drawing.Point(580, 135);
             this.gbOriginal.Name = "gbOriginal";
             this.gbOriginal.Size = new System.Drawing.Size(361, 326);
             this.gbOriginal.TabIndex = 2;
@@ -185,11 +185,11 @@
             // lblTimeElapsed
             // 
             this.lblTimeElapsed.AutoSize = true;
-            this.lblTimeElapsed.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeElapsed.Font = new System.Drawing.Font("Impact", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeElapsed.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblTimeElapsed.Location = new System.Drawing.Point(628, 376);
+            this.lblTimeElapsed.Location = new System.Drawing.Point(697, 58);
             this.lblTimeElapsed.Name = "lblTimeElapsed";
-            this.lblTimeElapsed.Size = new System.Drawing.Size(264, 80);
+            this.lblTimeElapsed.Size = new System.Drawing.Size(147, 43);
             this.lblTimeElapsed.TabIndex = 3;
             this.lblTimeElapsed.Text = "00:00:00";
             this.lblTimeElapsed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,8 +232,9 @@
             // 
             // tmrTimeElapse
             // 
+            this.tmrTimeElapse.Enabled = true;
             this.tmrTimeElapse.Interval = 900;
-            this.tmrTimeElapse.Tick += new System.EventHandler(this.timer1_Tick);
+            this.tmrTimeElapse.Tick += new System.EventHandler(this.UpdateTimeElapsed);
             // 
             // Form1
             // 
